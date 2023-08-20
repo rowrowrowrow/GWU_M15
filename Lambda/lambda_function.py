@@ -1,7 +1,3 @@
-### Required Libraries ###
-from datetime import datetime
-from dateutil.relativedelta import relativedelta
-
 ### Functionality Helper Functions ###
 def parse_int(n):
     """
@@ -182,13 +178,13 @@ allowed_risk_levels = [
 ]
 
 def get_recommendation_for_risk_level(risk_level):
-    if risk_level is 'none':
+    if risk_level == 'none':
         return "100% bonds (AGG), 0% equities (SPY)"
-    if risk_level is 'low':
+    if risk_level == 'low':
         return "60% bonds (AGG), 40% equities (SPY)"
-    if risk_level is 'medium':
+    if risk_level == 'medium':
         return "40% bonds (AGG), 60% equities (SPY)"
-    if risk_level is 'high':
+    if risk_level == 'high':
         return "20% bonds (AGG), 80% equities (SPY)"
 
 def validate_data(first_name, age, investment_amount, risk_level, intent_request):
