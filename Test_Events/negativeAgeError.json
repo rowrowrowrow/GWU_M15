@@ -2,21 +2,39 @@
   "messageVersion": "1.0",
   "invocationSource": "DialogCodeHook",
   "userId": "John",
-  "sessionAttributes": {},
   "bot": {
     "name": "RoboAdvisor",
     "alias": "$LATEST",
     "version": "$LATEST"
   },
   "outputDialogMode": "Text",
-  "currentIntent": {
-    "name": "recommendPortfolio",
-    "slots": {
-      "firstName": "John",
-      "age": "-2",
-      "riskLevel": "Low",
-      "investmentAmount": "5000"
-    },
-    "confirmationStatus": "None"
+  "sessionState":{
+    "sessionAttributes": {},
+    "intent": {
+      "name": "recommendPortfolio",
+      "slots": {
+        "firstName": {
+          "value": {
+            "interpretedValue": "John"
+          }
+        },
+        "age": {
+          "value": {
+            "interpretedValue": "-2"
+          }
+        },
+        "riskLevel": {
+          "value": {
+            "interpretedValue": "Low"
+          }
+        },
+        "investmentAmount": {
+          "value": {
+            "interpretedValue": "5000"
+          }
+        }
+      },
+      "confirmationStatus": "None"
+    }
   }
 }
